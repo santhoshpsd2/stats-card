@@ -31,7 +31,7 @@ h1 {
   color: hsl(0, 0%, 100%);
 }
 
-.stats h1 {
+.stats h2 {
   color: hsla(0, 0%, 100%, 0.9);
 }
 
@@ -49,7 +49,6 @@ p {
 }
 
 .desc {
-  /* margin-top: -25px; */
   padding-bottom: 30px;
 }
 
@@ -60,7 +59,22 @@ p {
 }
 
 .cardimage {
+  background-image: url(./images/image-header-desktop.jpg);
+  background-position: center;
   width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.cardimage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(277, 64%, 61%, 0.75);
+  z-index: 1;
 }
 
 .attribution {
@@ -75,7 +89,7 @@ p {
 @media (max-width: 1200px) {
   main {
     flex-direction: column-reverse;
-    height: auto;
+    height: 80vh;
     width: 350px;
     margin: 10% auto;
   }
@@ -86,7 +100,11 @@ p {
   }
 
   .cardimage {
+    background-image: url(./images/image-header-mobile.jpg);
+    height: 100%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
   }
 
   .stats {
