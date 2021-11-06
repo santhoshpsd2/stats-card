@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  height: 400px;
+  overflow: hidden;
+  color: white;
+  border-radius: 10px;
+  margin: 13% auto;
+}
+
+.insight {
+  color: hsl(277, 64%, 61%);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+.stats h1 {
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.carddetails {
+  width: 50%;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.desc {
+  /* margin-top: -25px; */
+  padding-bottom: 30px;
+}
+
+.stats {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardimage {
+  width: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1200px) {
+  main {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 350px;
+    margin: 10% auto;
+  }
+
+  .carddetails {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .cardimage {
+    width: 100%;
+  }
+
+  .stats {
+    width: 100%;
+  }
+}
